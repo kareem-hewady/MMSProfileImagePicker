@@ -671,13 +671,13 @@ const CGFloat kOverlayInset = 10;
     
     if (imagePicker.sourceType == UIImagePickerControllerSourceTypeCamera && !isSnapPhotoTargetAdded && isPresentingCamera) {
         
-        UIView* bottomBarView = [viewController.view.subviews objectAtIndex:2];
+//         UIView* bottomBarView = [viewController.view.subviews objectAtIndex:2];
         
-        UIButton* buttonView = [bottomBarView.subviews objectAtIndex:8];
+//         UIButton* buttonView = [bottomBarView.subviews objectAtIndex:8];
         
-        [buttonView removeTarget:viewController.view action:NULL forControlEvents:UIControlEventTouchUpInside];
+//         [buttonView removeTarget:viewController.view action:NULL forControlEvents:UIControlEventTouchUpInside];
         
-        [buttonView addTarget:self action:@selector(takePhoto:) forControlEvents:UIControlEventTouchUpInside];
+//         [buttonView addTarget:self action:@selector(takePhoto:) forControlEvents:UIControlEventTouchUpInside];
         
         isSnapPhotoTargetAdded = YES;
 
